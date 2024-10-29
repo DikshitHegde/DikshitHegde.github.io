@@ -1,0 +1,391 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<style type="text/css">
+    body {
+    font-family: "Titillium Web", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    /* font-family: 'Lato', Verdana, Helvetica, sans-serif; */
+    font-weight: 300;
+    font-size: 17px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 980px;
+    }
+    h1 {
+    font-weight:300;
+    line-height: 1.15em;
+    }
+
+    h2 {
+    font-size: 1.75em;
+    }
+    a:link,a:visited {
+    color: #1367a7;
+    text-decoration: none;
+    }
+    a:hover {
+    color: #208799;
+    }
+    h1, h2, h3 {
+    text-align: center;
+    }
+    h1 {
+    font-size: 40px;
+    font-weight: 500;
+    }
+    .rainbow-text {
+    font-size: 40px;
+    background-image: linear-gradient(to left, rgb(252, 252, 183),green 50%, #00FF00 100% );
+    -webkit-background-clip: text;
+    color: transparent;
+    }
+    h2 {
+    font-weight: 400;
+    margin: 16px 0px 4px 0px;
+    }
+    .paper-title {
+    padding: 16px 0px 16px 0px;
+    }
+    section {
+    margin: 32px 0px 32px 0px;
+    text-align: justify;
+    clear: both;
+    }
+    .col-6 {
+    width: 16.6%;
+    float: left;
+    }
+    .col-5 {
+    width: 20%;
+    float: left;
+    }
+    .col-4 {
+    width: 25%;
+    float: left;
+    }
+    .bold-sentence {font-weight: bold;}
+    .col-3 {
+    width: 33%;
+    float: left;
+    }
+    .col-2 {
+    width: 50%;
+    float: left;
+    }
+    .row, .author-row, .affil-row {
+    overflow: auto;
+    }
+    .author-row, .affil-row {
+    font-size: 20px;
+    }
+    .row {
+    margin: 16px 0px 16px 0px;
+    }
+    .authors {
+    font-size: 18px;
+    }
+    .affil-row {
+    margin-top: 16px;
+    }
+    .teaser {
+    max-width: 100%;
+    }
+    .text-center {
+    text-align: center;  
+    }
+    .text-justify {
+    text-align: justify;  
+    }
+    .screenshot {
+    width: 256px;
+    border: 1px solid #ddd;
+    }
+    .screenshot-el {
+    margin-bottom: 16px;
+    }
+    hr {
+    height: 1px;
+    border: 0; 
+    border-top: 1px solid #ddd;
+    margin: 0;
+    }
+    .material-icons {
+    vertical-align: -6px;
+    }
+    p {
+    line-height: 1.25em;
+    }
+    .caption {
+    font-size: 16px;
+    /*font-style: italic;*/
+    color: rgb(73, 73, 73);
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 12px;
+    }
+    .caption_method {
+    font-size: 16px;
+    /*font-style: italic;*/
+    color: rgb(73, 73, 73);
+    /* text-align: center; */
+    margin-top: 15px;
+    margin-bottom: 12px;
+    }
+    video {
+    display: block;
+    margin: auto;
+    }
+    figure {
+    display: block;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    }
+    #bibtex pre {
+    font-size: 14px;
+    background-color: #eee;
+    padding: 16px;
+    }
+    .blue {
+    color: #2c82c9;
+    font-weight: bold;
+    }
+    .orange {
+    color: #d35400;
+    font-weight: bold;
+    }
+    .flex-row {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    }
+    .paper-btn {
+    position: relative;
+    text-align: center;
+
+    display: inline-block;
+    margin: 8px;
+    padding: 8px 8px;
+
+    border-width: 0;
+    outline: none;
+    border-radius: 2px;
+    
+    background-color: #1367a7;
+    color: #ecf0f1 !important;
+    font-size: 20px;
+    width: 100px;
+    font-weight: 600;
+    }
+
+    /* .supp-btn {
+    position: relative;
+    text-align: center;
+
+    display: inline-block;
+    margin: 8px;
+    padding: 8px 8px;
+
+    border-width: 0;
+    outline: none;
+    border-radius: 2px;
+    
+    background-color: #1367a7;
+    color: #ecf0f1 !important;
+    font-size: 18px;
+    width: 90px;
+    font-weight: 400;
+} */
+    .supp-btn {
+    background-color: #fff;
+    border: 1.5px solid #000;
+    color: #000 !important;
+    font-size: 16px;
+    padding: 12px 24px;
+    border-radius: 50px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    letter-spacing: 1px;
+    margin: 8px;
+    padding: 8px 8px;
+    width: 150px;
+    font-weight: 400;
+    }
+    .paper-btn-parent {
+    display: flex;
+    justify-content: center;
+    margin: 16px 0px;
+    }
+    .paper-btn:hover {
+    opacity: 0.85;
+    }
+    .container {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 16px;
+    padding-right: 16px;
+    }
+    /* .venue {
+    color: #1367a7;
+} */
+    .venue {
+    /*    color: #1367a7;*/
+    color: #111;
+    font-weight: 400;
+    }
+
+
+    .topnav {
+    overflow: hidden;
+    background-color: #EEEEEE;
+    }
+
+    .topnav a {
+    float: left;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 16px;
+    }
+    .controls {
+    margin-bottom: 10px;
+    margin-top: 20px;
+    }
+    .left-controls {
+    display: inline-block;
+    vertical-align: top;
+    width: 80%;
+    }
+    .right-controls {
+    display: inline-block;
+    vertical-align: top;
+    width: 19%;
+    text-align: right;
+    }
+
+    .render_window {
+    display: inline-block;
+    vertical-align: middle;
+    box-shadow: 0px 0px 0px black;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    width: calc(33% - 20px);
+    }
+    /* From Ref-NeRF */
+    .video-compare-container {
+    width: 95%;
+    margin: 0 auto;
+    position: relative;
+    display: block;
+    line-height: 0;
+    overflow: hidden !important;
+    }
+
+    .video {
+    width: 100%;
+    height: auto;
+    position: relative;
+    top: 0;
+    left: 0;
+    }
+
+    .videoMerge {
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+    background-size: cover;
+    }
+
+    .cropped-video {
+    width: 100%;
+    overflow: hidden;
+    display: block;
+    }
+    .large_video {
+    margin: 10px 0 0 0;
+    border: 1px solid #BBB;
+    box-shadow: 0 0 30px #792;
+    }
+    </style>
+    
+
+<div class="topnav" id="myTopnav">
+<a><img width="100%" src=""></a>
+<a href="https://cevi.co.in" ><strong>Center of Excellence in Visual Intelligence (CEVI)</strong></a>
+</div>
+
+<!-- End : Google Analytics Code -->
+<script type="text/javascript" src="../js/hidebib.js"></script>
+<link href='https://fonts.googleapis.com/css?family=Titillium+Web:400,600,400italic,600italic,300,300italic' rel='stylesheet' type='text/css'>
+<head>
+    <title>XCube: Large-Scale 3D Generative Modeling using Sparse Voxel Hierarchies</title>
+    
+    <meta property="og:description" content="LGAfford-Net: A Local Geometry Aware Affordance Detection Network for 3D Point Clouds"/>
+
+    <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-6HHDEXF452"></script>
+    
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-6HHDEXF452');
+    </script>
+
+</head>
+
+
+<body>
+    <div class="container">
+        <div class="paper-title">
+	        <h1> LGAfford-Net: A Local Geometry Aware Affordance Detection Network for 3D Point Clouds </h1>
+        </div>
+
+        <div id="authors">
+            <div class="author-row">
+                <div class="col-3 text-center"><a href="https://scholar.google.com/citations?user=hZbrO4IAAAAJ&hl=en">Ramesh Ashok Tabib</a></div> <!-- <sup>1,2,3</sup> -->
+              
+                <div class="col-3 text-center"><a href="https://dikshithegde.github.io">Dikshit Hegde</a></div>
+              
+                <div class="col-3 text-center"><a href="https://scholar.google.com/citations?user=xBaqwmkAAAAJ&hl=en">Uma Mudenagudi</a></div>
+            
+            </div>
+            <div class="affil-row text-center">
+                Center of Excellence in Visual Intelligence,<br> 
+                KLE Technological University, INDIA-580031
+            </div>
+
+            <div style="clear: both">
+                <div class="paper-btn-parent">
+                    <a class="supp-btn" href=https://openaccess.thecvf.com/content/CVPR2024W/DLGC/papers/Tabib_LGAfford-Net_A_Local_Geometry_Aware_Affordance_Detection_Network_for_3D_CVPRW_2024_paper.pdf">
+                    <span class="material-icons"> description </span> 
+                    Paper</a>
+                    
+                    <a class="supp-btn" href="https://youtu.be/j7BiNGgvnoo"><span class="material-icons"> description </span>Video</a>
+                </div>
+            </div>
+        </div>
+
+        <section id="abstract">
+            <h2>Abstract</h2>
+            <p>
+            We introduce LGAfford-Net, a novel architecture tailored for affordance detection in 3D point clouds. Affordance, crucial for human-robot interaction, denotes regions on objects where interaction is possible. Understanding affordance demands perceiving 3D space akin to humans. Leveraging the ubiquity of point clouds in capturing 3D environments, our method addresses challenges posed by their sparse, unordered, and unstructured nature. Unlike prior approaches that overlook local context and semantic cues, we propose a Semantic Geometric Correlator (SGC) block, integrating Local Geometric Descriptor (LGD) for local understanding, and Edge Convolution for semantic awareness. The integration of SGC, LGD, and edge convolution within our network enhances its capability to perceive and understand affordances by leveraging both geometric and semantic information effectively. Additionally, we employ Class Specific Classifiers (CSC) to accommodate multiple affordance types per point. CSC effectively establish one to many relationship between point to affordance labels. We demonstrate the results of proposed architecture on 3DAffordanceNet a benchmark dataset and compare them with state-of-the-art methods. We demonstrate the effectiveness of the features learnt by our proposed architecture for the point cloud classification task using the ModelNet40 dataset.
+            </p>
+        </section>
+
+
+
+</body>
+</html>
