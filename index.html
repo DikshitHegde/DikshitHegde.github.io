@@ -2,11 +2,8 @@
 <html>
 
 <head>
-
-
-
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-129673183-1"></script>
+  <!-- Google Analytics for tracking visitor metrics and user engagement -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-129673183-1"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
@@ -18,8 +15,9 @@
   <meta name=viewport content="width=800">
   <meta name="generator" content="HTML Tidy for Linux/x86 (vers 11 February 2007), see www.w3.org">
   <style type="text/css">
-    /* Color scheme stolen from Sergey Karayev */
+    /* CSS Styling for portfolio layout, typography, and interactive elements */
 
+    /* Link styling with hover effects */
     a {
       color: #1772d0;
       text-decoration: none;
@@ -86,8 +84,24 @@
     span.highlight {
       background-color: #ffffd0;
     }
+
+    /* Scrollable container for recent updates list */
+    .recent-updates-scroll {
+      max-height: 300px;
+      overflow-y: auto;
+      padding: 10px;
+    }
+
+    /* Hide scrollbar while keeping scroll functionality */
+    .recent-updates-scroll::-webkit-scrollbar {
+      display: none;
+    }
+
+    .recent-updates-scroll {
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+    }
   </style>
-  <!-- <link rel="icon" type="image/png" href="images/icon.png"> -->
   <title>Dikshit Hegde</title>
   <meta http-equiv="Content-Type" content="text/html; charset=us-ascii">
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
@@ -97,7 +111,7 @@
   <table width="900" border="0" align="center" cellspacing="0" cellpadding="0">
     <tr>
       <td>
-        <!-- Bio and Image -->
+        <!-- PROFILE SECTION: Bio, photo, and key navigation links -->
         <table width="100%" align="center" border="0" cellspacing="0" cellpadding="10">
           <tr>
             <td width="80%" valign="middle">
@@ -108,8 +122,6 @@
 	      <p>&nbsp;</p>
               <p align="justify">
                 I am a PhD student advised by <a href="https://shanmuga.people.iitgn.ac.in">Prof. Shanmuganathan Raman</a> at the Computer Vision, Imaging, and Graphics (CVIG) Lab in Indian Institute of Technology Gandhinagar (IIT Gandhinagar). I have been awarded with IndiaAI fellowship.</p>
-                <!-- where I work on 3D computer vision and deep learning. -->
-                <!-- Most recently, my research has focused on vision-language models for 3D scene understanding and autonomous driving. -->
               
                 <p align="justify">
                 I served as a Research Assistant at <a href="https://cevi.co.in">Center of Excellence in Visual Intelligence (CEVI)</a> under the advised by <a href="https://www.linkedin.com/in/uma-mudenagudi-53b2b71b/">Prof. Uma Mudenagudi</a> and <a href="https://www.linkedin.com/in/ramesh-ashok-tabib-a399a4b1/">Ramesh Ashok Tabib</a> where I worked on Understanding and Learning Representation of 3D Point Clouds. I am interested in understanding the data in unsupervised manner.
@@ -118,31 +130,27 @@
               <p align="justify">
                 I did my Bachelors in Electronics and Communication from <a href="https://kletech.ac.in">KLE Technological University</a>, Hubballi. I majorly worked on Categorization of Crowdsourced data, data encryption, and 3d data creation advised by Prof Uma Mudenagudi and Ramesh Ashok Tabib.
               </p>
-                
-	          
-	      <p align="justify"> 
-          <h2>
-            Recent Updates
-          </h2>
-	        <ul>
-            <li> <i>May 2026:</i> Our work on Affordance Detection in pointclouds got <strong>Accepted</strong> in <strong>Springer Nature Computer Science Journal</strong> with paper title <strong>SPAN: Semantic Perception Aware Network Towards Affordance Detection in 3D Point Clouds</strong></a></b>.
-            
-            <li> <i>February 2026:</i> Our work on Affordance Detection in pointclouds got <strong>Accepted</strong> in <strong>Computers and Graphics Journal</strong> with paper title <strong>RIFLe-Net: Rotation Invariant Feature Learning Network towards affordance detection in 3D point clouds</strong></a></b>.
-          
-            <li> <i>April 2024:</i> Our work on Affordance Detection in pointclouds got <strong>Accepted</strong> in <strong>DLGC Workshop @ CVPR 2024</strong> with paper title <strong>LGAfford-Net: A Local Geometry Aware Affordance Detection Network for 3D Point Clouds</strong></a></b>.
-        
-            <li> <i>August 2023:</i> Our work on Detection and filling of holes in pointclouds got <strong>Accepted</strong> in <strong>e-Heritage Workshop @ ICCV 2023</strong> with paper title <strong>DeFi: Detection and Filling of Holes in Point Clouds Towards Restoration of Digitized Cultural Heritage Models</strong></a></b>.
-      
-            <li> <i>April 2023:</i> Our work on Decomposition of pointclouds got <strong>Accepted</strong> in <strong>StruCo3D Workshop @ CVPR 2023</strong> with paper title <strong>IPD-Net: SO(3) Invariant Primitive Decompositional Network for 3D Point Clouds</strong></a></b>.
-    
-            <!-- <li> <i>Dec 2022:</i> Our work on Topological understanding of pointclouds got <strong>Accepted</strong> in <strong>SIGGRAPH Asia 2022 Posters</strong> with poster title <strong>Metric-KNN is All You Needs</strong></a></b>.
-  
-            <li> <i>April 2022:</i> Our work on Decomposition of pointclouds got <strong>Accepted</strong> in <strong>DLGC Workshop @ CVPR 2022</strong> with paper title <strong>VG-VAE: A Venatus Geometry Point-Cloud Variational Auto-Encoder</strong></a></b>.
+	      <h2>Recent Updates</h2>
+	      <div class="recent-updates-scroll">
+                <ul>
+                  <li><i>May 2026:</i> Our work on Affordance Detection in pointclouds got <strong>Accepted</strong> in <strong>Springer Nature Computer Science Journal</strong> with paper title <strong>SPAN: Semantic Perception Aware Network Towards Affordance Detection in 3D Point Clouds</strong>.
+                  
+                  <li><i>February 2026:</i> Our work on Affordance Detection in pointclouds got <strong>Accepted</strong> in <strong>Computers and Graphics Journal</strong> with paper title <strong>RIFLe-Net: Rotation Invariant Feature Learning Network towards affordance detection in 3D point clouds</strong>.
+                  
+                  <li><i>April 2024:</i> Our work on Affordance Detection in pointclouds got <strong>Accepted</strong> in <strong>DLGC Workshop @ CVPR 2024</strong> with paper title <strong>LGAfford-Net: A Local Geometry Aware Affordance Detection Network for 3D Point Clouds</strong>.
+                  
+                  <li><i>August 2023:</i> Our work on Detection and filling of holes in pointclouds got <strong>Accepted</strong> in <strong>e-Heritage Workshop @ ICCV 2023</strong> with paper title <strong>DeFi: Detection and Filling of Holes in Point Clouds Towards Restoration of Digitized Cultural Heritage Models</strong>.
+                  
+                  <li><i>April 2023:</i> Our work on Decomposition of pointclouds got <strong>Accepted</strong> in <strong>StruCo3D Workshop @ CVPR 2023</strong> with paper title <strong>IPD-Net: SO(3) Invariant Primitive Decompositional Network for 3D Point Clouds</strong>.
 
-            <li> <i>April 2022:</i> Our work on Categorization of Images got <strong>Accepted</strong> in <strong>IMW Workshop @ CVPR 2022</strong> with paper title <strong>DA-AE: Disparity-Alleviation Auto-Encoder Towards Categorization of Heritage Images for Aggrandized 3D Reconstruction</strong></a></b>. -->
+                  <li> <i>Dec 2022:</i> Our work on Topological understanding of pointclouds got <strong>Accepted</strong> in <strong>SIGGRAPH Asia 2022 Posters</strong> with poster title <strong>Metric-KNN is All You Needs</strong></a></b>.
+  
+                  <li> <i>April 2022:</i> Our work on Decomposition of pointclouds got <strong>Accepted</strong> in <strong>DLGC Workshop @ CVPR 2022</strong> with paper title <strong>VG-VAE: A Venatus Geometry Point-Cloud Variational Auto-Encoder</strong></a></b>.
+
+                  <li> <i>April 2022:</i> Our work on Categorization of Images got <strong>Accepted</strong> in <strong>IMW Workshop @ CVPR 2022</strong> with paper title <strong>DA-AE: Disparity-Alleviation Auto-Encoder Towards Categorization of Heritage Images for Aggrandized 3D Reconstruction</strong></a></b>.
     
-            </ul>
-        </p>
+                </ul>
+              </div>
 	    </td>
             <td width="22%">
               <img src="images/Self.jpeg" width=100%>
@@ -159,31 +167,30 @@
              </p>
 	     <p>&nbsp;</p>
 
-       
+       <!-- RESEARCH INTERESTS SECTION -->
        <h2>Research Interests</h2>
        <p align="justify">
         My primary research area is 3D Computer Vision (Unsupervised Learning, Learning Representation, Categorization Point Cloud Analysis, Geometric Deep Learning, and Incremental Learning).
              </p>
 
+       <!-- PUBLICATIONS SECTION: Research publications and conference papers -->
         <h2>Selected Works</h2>
 	   </td>
 	  </tr>
       
         </table>
 
-        <!-- #######Publications -->
+        <!-- PUBLICATIONS TABLE: Research papers with abstracts and media links -->
         <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
           
-          <!-- SPAN -->
+          <!-- PAPER 1: SPAN - Semantic Perception Aware Network (2026) -->
           <tr>
             <td width="35%">
               <img src='images/SPAN.png' width=100%>
-              <!-- <img src='images/LGAffordNet.png' width=100%> -->
             </td>
             <td valign="top" width="70%">
               <p>
                 <a href="https://link.springer.com/article/10.1007/s42979-026-04994-7">
-                  <!-- <a href="/LGAfford-Net/index.html"> -->
                   <papertitle>SPAN: Semantic Perception Aware Network Towards Affordance Detection in 3D Point Clouds</papertitle>
                 </a>
                 <br>
@@ -191,27 +198,19 @@
                 <br>
                 <em>Springer Nature Computer Science Journal 2026</em>
                 <br> 
-                <!-- <a href="https://youtu.be/j7BiNGgvnoo">[video]</a> -->
                 <a href="https://link.springer.com/article/10.1007/s42979-026-04994-7">[pdf]</a> <br>
-                <!-- <a href="https://youtu.be/6I4SuJ10KGc">[video]</a> <br> -->
-                <!-- <a href="https://youtu.be/6I4SuJ10KGc"><button type="button" class="btn btn-primary btn-xs">Video</button></a> <br> -->
-                <!-- <a href="https://youtu.be/YqP7UVhwdWQ">[video]</a> <br> -->
-                <!-- <p align="justify">We present a framework inspired by human cognition to decompose point clouds into four primitive 3D shapes (plane, cylinder, cone, and sphere) and enable machines to understand the objects irrespective of its orientations. We demonstrate the results of our proposed methodology for SO(3) invariant decomposition on TraceParts Dataset, and show the generalizability of proposed IPD-Net as plugin for downstream task on classification of point clouds.
-                  </p> -->
             </td>
           </tr>
 
 
-          <!-- RiFLeNet -->
+          <!-- PAPER 2: RIFLe-Net - Rotation Invariant Feature Learning (2026) -->
           <tr>
             <td width="35%">
               <img src='images/RIFLE.jpg' width=100%>
-              <!-- <img src='images/LGAffordNet.png' width=100%> -->
             </td>
             <td valign="top" width="70%">
               <p>
                 <a href="https://www.sciencedirect.com/science/article/pii/S0097849326000221">
-                  <!-- <a href="/LGAfford-Net/index.html"> -->
                   <papertitle>RIFLe-Net: Rotation Invariant Feature Learning Network towards affordance detection in 3D point clouds</papertitle>
                 </a>
                 <br>
@@ -219,28 +218,20 @@
                 <br>
                 <em>Journal of Computers and Graphics 2026</em>
                 <br> 
-                <!-- <a href="https://youtu.be/j7BiNGgvnoo">[video]</a> -->
                 <a href="https://www.sciencedirect.com/science/article/pii/S0097849326000221">[pdf]</a> <br>
-                <!-- <a href="https://youtu.be/6I4SuJ10KGc">[video]</a> <br> -->
-                <!-- <a href="https://youtu.be/6I4SuJ10KGc"><button type="button" class="btn btn-primary btn-xs">Video</button></a> <br> -->
-                <!-- <a href="https://youtu.be/YqP7UVhwdWQ">[video]</a> <br> -->
-                <!-- <p align="justify">We present a framework inspired by human cognition to decompose point clouds into four primitive 3D shapes (plane, cylinder, cone, and sphere) and enable machines to understand the objects irrespective of its orientations. We demonstrate the results of our proposed methodology for SO(3) invariant decomposition on TraceParts Dataset, and show the generalizability of proposed IPD-Net as plugin for downstream task on classification of point clouds.
-                  </p> -->
             </td>
           </tr>
 
 
 
-          <!-- LGAfford -->
+          <!-- PAPER 3: LGAfford-Net - Local Geometry Aware Affordance Detection (2024) -->
           <tr>
             <td width="35%">
               <img src='images/LGAfford.gif' width=100%>
-              <!-- <img src='images/LGAffordNet.png' width=100%> -->
             </td>
             <td valign="top" width="70%">
               <p>
                 <a href="https://openaccess.thecvf.com/content/CVPR2024W/DLGC/html/Tabib_LGAfford-Net_A_Local_Geometry_Aware_Affordance_Detection_Network_for_3D_CVPRW_2024_paper.html">
-                  <!-- <a href="/LGAfford-Net/index.html"> -->
                   <papertitle>LGAfford-Net: A Local Geometry Aware Affordance Detection Network for 3D Point Clouds</papertitle>
                 </a>
                 <br>
@@ -250,16 +241,11 @@
                 <br> 
                 <a href="https://youtu.be/j7BiNGgvnoo">[video]</a>
                 <a href="https://openaccess.thecvf.com/content/CVPR2024W/DLGC/papers/Tabib_LGAfford-Net_A_Local_Geometry_Aware_Affordance_Detection_Network_for_3D_CVPRW_2024_paper.pdf">[pdf]</a> <br>
-                <!-- <a href="https://youtu.be/6I4SuJ10KGc">[video]</a> <br> -->
-                <!-- <a href="https://youtu.be/6I4SuJ10KGc"><button type="button" class="btn btn-primary btn-xs">Video</button></a> <br> -->
-                <!-- <a href="https://youtu.be/YqP7UVhwdWQ">[video]</a> <br> -->
-                <!-- <p align="justify">We present a framework inspired by human cognition to decompose point clouds into four primitive 3D shapes (plane, cylinder, cone, and sphere) and enable machines to understand the objects irrespective of its orientations. We demonstrate the results of our proposed methodology for SO(3) invariant decomposition on TraceParts Dataset, and show the generalizability of proposed IPD-Net as plugin for downstream task on classification of point clouds.
-                  </p> -->
             </td>
           </tr>
 
 
-          <!-- DeFi -->
+          <!-- PAPER 4: DeFi - Detection and Filling of Holes in Point Clouds (2023) -->
           <tr>
             <td width="35%">
               <img src='images/DEFI.png' width=100%>
@@ -276,15 +262,11 @@
                 <br> 
                 <a href="https://youtu.be/6I4SuJ10KGc">[video]</a>
                 <a href="https://openaccess.thecvf.com/content/ICCV2023W/e-Heritage/papers/Tabib_DeFi_Detection_and_Filling_of_Holes_in_Point_Clouds_Towards_ICCVW_2023_paper.pdf">[pdf]</a> <br>
-                <!-- <a href="https://youtu.be/6I4SuJ10KGc"><button type="button" class="btn btn-primary btn-xs">Video</button></a> <br> -->
-                <!-- <a href="https://youtu.be/YqP7UVhwdWQ">[video]</a> <br> -->
-                <!-- <p align="justify">We present a framework inspired by human cognition to decompose point clouds into four primitive 3D shapes (plane, cylinder, cone, and sphere) and enable machines to understand the objects irrespective of its orientations. We demonstrate the results of our proposed methodology for SO(3) invariant decomposition on TraceParts Dataset, and show the generalizability of proposed IPD-Net as plugin for downstream task on classification of point clouds.
-                  </p> -->
             </td>
           </tr>
 
 
-          <!-- IPD-Net -->
+          <!-- PAPER 5: IPD-Net - SO(3) Invariant Primitive Decompositional Network (2023) -->
           <tr>
             <td width="35%">
               <img src='images/IPD-Net.png' width=100%>
@@ -301,22 +283,17 @@
                 <br> 
                 <a href="https://youtu.be/MeLkgYmAvdY?si=dRWl8knC9cX_uLs7">[video]</a> 
                 <a href="https://openaccess.thecvf.com/content/CVPR2023W/StruCo3D/papers/Tabib_IPD-Net_SO3_Invariant_Primitive_Decompositional_Network_for_3D_Point_Clouds_CVPRW_2023_paper.pdf">[pdf]</a> <br>
-                <!-- <p align="justify">We present a framework inspired by human cognition to decompose point clouds into four primitive 3D shapes (plane, cylinder, cone, and sphere) and enable machines to understand the objects irrespective of its orientations. We demonstrate the results of our proposed methodology for SO(3) invariant decomposition on TraceParts Dataset, and show the generalizability of proposed IPD-Net as plugin for downstream task on classification of point clouds.
-                  </p> -->
             </td>
           </tr>
 
-          <!-- Metric KNN -->
+          <!-- PAPER 6: Metric-KNN - Topology Aware Learning (2022) -->
           <tr>
             <td width="35%">
               <img src='images/MKNN.gif' width=100%>
-              <!-- <img src='images/MetricKNN.png' width=100%> -->
             </td>
             <td valign="top" width="70%">
               <p>
-                <!-- <a href=""> -->
-                  <papertitle>Metric-KNN is All You Need</papertitle>
-                </a>
+                <papertitle>Metric-KNN is All You Need</papertitle>
                 <br>
                 Tejas Anvekar, Ramesh Ashok Tabib, <strong><u>Dikshit Hegde</u></strong>, Uma Mudenagudi
                 <br>
@@ -324,21 +301,15 @@
                 <br> 
                 <a href="https://youtu.be/O_aDiHsDgvw">[video]</a>
                 <a href="https://dl.acm.org/doi/abs/10.1145/3550082.3564198">[pdf]</a> <br>
-
-                <!-- <p align="justify">
-                  We propose a novel Metric-K Nearest Neighbor (M-KNN) to facilitate topology aware learning in point clouds. Recent work rely on Ball queries or K-Nearest-Neighbor (KNN) for local feature extraction of point clouds and finds challenges in retaining topological information. M-KNN employes a generalised Minkowski distance in the KNN search algorithm for topological representation of point clouds. M-KNN enables state-of-the-art point cloud methods to perform topology aware downstream tasks.
-
-                  </p> -->
             </td>
           </tr>
 
 
 
-          <!-- VG-VAE -->
+          <!-- PAPER 7: VG-VAE - Venatus Geometry Point-Cloud Variational Auto-Encoder (2022) -->
           <tr>
             <td width="35%">
               <img src='images/VG-VAE.gif' width=100%>
-              <!-- <img src='images/vgvae.png' width=100%> -->
             </td>
             <td valign="top" width="70%">
               <p>
@@ -352,21 +323,15 @@
                 <br> 
                 <a href="https://youtu.be/vDF61_EMKBU?si=rM-_XKAPbABTwwdi">[video]</a>
                 <a href="https://openaccess.thecvf.com/content/CVPR2022W/DLGC/papers/Anvekar_VG-VAE_A_Venatus_Geometry_Point-Cloud_Variational_Auto-Encoder_CVPRW_2022_paper.pdf">[pdf]</a> <br>
-
-                <!-- <p align="justify">
-                  We propose a novel Metric-K Nearest Neighbor (M-KNN) to facilitate topology aware learning in point clouds. Recent work rely on Ball queries or K-Nearest-Neighbor (KNN) for local feature extraction of point clouds and finds challenges in retaining topological information. M-KNN employes a generalised Minkowski distance in the KNN search algorithm for topological representation of point clouds. M-KNN enables state-of-the-art point cloud methods to perform topology aware downstream tasks.
-
-                  </p> -->
             </td>
           </tr>
 
 
 
-          <!-- DA-AE -->
+          <!-- PAPER 8: DA-AE - Disparity-Alleviation Auto-Encoder (2022) -->
           <tr>
             <td width="35%">
               <img src='images/DA-AE.gif' width=100%>
-              <!-- <img src='images/DAAE.png' width=100%> -->
             </td>
             <td valign="top" width="70%">
               <p>
@@ -380,17 +345,12 @@
                 <br> 
                 <a href="https://youtu.be/OF6pEk6fNBE?si=cKEJuoOqmKMfoMhi">[video]</a> 
                 <a href="https://openaccess.thecvf.com/content/CVPR2022W/IMW/papers/Hegde_DA-AE_Disparity-Alleviation_Auto-Encoder_Towards_Categorization_of_Heritage_Images_for_Aggrandized_CVPRW_2022_paper.pdf">[pdf]</a> <br>
-
-                <!-- <p align="justify">
-                  We propose a novel Metric-K Nearest Neighbor (M-KNN) to facilitate topology aware learning in point clouds. Recent work rely on Ball queries or K-Nearest-Neighbor (KNN) for local feature extraction of point clouds and finds challenges in retaining topological information. M-KNN employes a generalised Minkowski distance in the KNN search algorithm for topological representation of point clouds. M-KNN enables state-of-the-art point cloud methods to perform topology aware downstream tasks.
-
-                  </p> -->
             </td>
           </tr>
 
 
 
-          <!-- Nussiance -->
+          <!-- PAPER 9: Modeling Nuisance Classifier - Crowd-Sourced Data Learning (2021) -->
           <tr>
             <td width="35%">
               <img src='images/Nussiance.png' width=100%>
@@ -404,19 +364,13 @@
                 Ramesh Ashok Tabib, T Santoshkumar, <strong><u>Dikshit Hegde</u></strong>, Adarsh Jamadandi, Uma Mudenagudi
                 <br>
                 <em>ICVGIP 2021 </em>
-                <br> 
-                <!-- <a href="https://youtu.be/YqP7UVhwdWQ">[video]</a> <br> -->
-
-                <!-- <p align="justify">
-                  We propose a novel Metric-K Nearest Neighbor (M-KNN) to facilitate topology aware learning in point clouds. Recent work rely on Ball queries or K-Nearest-Neighbor (KNN) for local feature extraction of point clouds and finds challenges in retaining topological information. M-KNN employes a generalised Minkowski distance in the KNN search algorithm for topological representation of point clouds. M-KNN enables state-of-the-art point cloud methods to perform topology aware downstream tasks.
-
-                  </p> -->
+                <br>
             </td>
           </tr>
 
 
 
-          <!-- IVAE -->
+          <!-- PAPER 10: Deep Features for Heritage Images Categorization (2020) -->
           <tr>
             <td width="35%">
               <img src='images/IVAE.png' width=100%>
@@ -430,48 +384,18 @@
                 Ramesh Ashok Tabib, <strong><u>Dikshit Hegde</u></strong>, T Santoshkumar, Srikar HI, Mutturaj Harage, Chaitra Desai, Ujwala Patil, Uma Mudenagudi
                 <br>
                 <em>VisionNet, CoCoNet 2020 </em>
-                <br> 
-                <!-- <p align="justify">
-                  We propose a novel Metric-K Nearest Neighbor (M-KNN) to facilitate topology aware learning in point clouds. Recent work rely on Ball queries or K-Nearest-Neighbor (KNN) for local feature extraction of point clouds and finds challenges in retaining topological information. M-KNN employes a generalised Minkowski distance in the KNN search algorithm for topological representation of point clouds. M-KNN enables state-of-the-art point cloud methods to perform topology aware downstream tasks.
-
-                  </p> -->
+                <br>
             </td>
           </tr>
 
 
 
-        <!-- Teaching -->
-        <!-- <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
-            <tr>
-              <td width="100%" valign="middle">
-                <heading>Teaching</heading>
-								<p>
-									I have been the Instructor for the following course:
-										<ul>
-											<li>CISC210: Introduction to Systems Programming [Summer 2020]</li>
-										</ul>
-                  I have been the Lead Teaching Assistant for the following course:
-                    <ul>
-                      <li> CISC210: Introduction to Systems Programming at the University of Delaware[Fall 2022, Spring 2022, Spring 2021, Fall 2020, Spring 2020, Fall 2019, Spring 2019] </li>
-                    </ul>
-									I have been the Teaching Assistant for the following courses:
-	                  <ul>
-	                    <li> CISC220: Data Structures at the University of Delaware [Fall 2021] </li>
-											<li> CISC101: Principles of Computing at the University of Delaware [Winter 2021] </li>
-	                    <li> CISC662: Advanced Computer Architecture at the University of Delaware [Fall 2018]</li>
-	                  </ul>
-                </p>
-	   Some <a href="https:/related.html">related papers</a> to mine.
-              </td>
-            </tr>
-        </table> -->
+        </table>
+        <!-- END OF PUBLICATIONS SECTION -->
 
-        <!-- Reference -->
-        
-      <!-- </td>
-    </tr> -->
+      </td>
+    </tr>
   </table>
-  <!-- <p align="right"><a href="https://jonbarron.info/">[Source Code]</a></p> -->
 </body>
 
 </html>
